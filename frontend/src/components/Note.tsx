@@ -18,6 +18,7 @@ const Note = ({
   onDeleteNodeClicked,
   className,
 }: NoteProps) => {
+  console.log(note);
   const { title, text, createdAt, updatedAt } = note;
 
   let createdUpdatedText: string;

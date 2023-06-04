@@ -24,7 +24,8 @@ const AddEditNoteDialog = ({
     defaultValues: {
       title: noteToEdit?.title || '',
       text: noteToEdit?.text || '',
-    },
+      priority: noteToEdit?.priority || 1,
+    } as { title: string; text: string; priority: number },
   });
 
   async function onSubmit(input: NoteInput) {
