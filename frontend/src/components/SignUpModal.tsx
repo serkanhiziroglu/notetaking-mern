@@ -72,7 +72,12 @@ const SignUpModal = ({ onDismiss, onSignUpSuccessful }: SignUpModalProps) => {
             registerOptions={{ required: 'Required' }}
             error={errors.password}
           />
-          <Button
+          <Button style={{
+            backgroundColor: '#808080',
+            color: '#FFFFFF',
+            border: 'none',
+            marginRight: '10px', // Added margin to the right
+          }}
             type='submit'
             disabled={isSubmitting}
             className={styleUtils.width100}

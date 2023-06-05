@@ -18,15 +18,15 @@ const NavBarLoggedInView = ({ user, onLogoutSuccessful }: NavBarLoggedInViewProp
             alert(error);
         }
     }
-
-    return (<div style={{ display: 'flex', alignItems: 'center' }}>
-        <Navbar.Text>
-            Signed in as: {user.username}
-        </Navbar.Text>
-        <div style={{ marginLeft: '10px' }}>
-            <Button variant="primary" onClick={logout}>Log out</Button>
+    return (
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+            <Navbar.Text style={{ color: 'black' }}>
+                Signed in as: {user.username}
+            </Navbar.Text>
+            <div style={{ marginLeft: '10px' }}>
+                <Button style={{ backgroundColor: '#808080', color: '#FFFFFF', border: 'none' }} onClick={logout}>Log out</Button>
+            </div>
         </div>
-    </div>
     );
 }
 
