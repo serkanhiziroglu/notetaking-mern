@@ -126,7 +126,7 @@ export const updateNote: RequestHandler<
 
     note.title = newTitle;
     note.text = newText;
-    // note.priority = newPriority;
+    note.priority = newPriority;
 
     const updatedNote = await note.save();
 
