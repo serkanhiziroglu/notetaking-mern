@@ -1,42 +1,59 @@
 .noteCard {
-    background-color: cornsilk;
-    margin: 10px;
-    width: 350px;
-    height: 250px;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  background-color: cornsilk;
+  margin: 10px;
+  width: 350px;
+  height: 250px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.highPriority {
+  background-color: red;
+}
+
+.mediumPriority {
+  background-color: cornsilk;
+}
+
+.lowPriority {
+  background-color: white;
 }
 
 .cardFooter {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.7rem 1rem;
-    box-sizing: border-box;
-    background-color: #ececec87;
-    border-radius: 5px;
-    width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.7rem 1rem;
+  box-sizing: border-box;
+  background-color: #ececec87;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .noteContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 10px;
-    justify-content: start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+  justify-content: start;
 }
 
 .cardBody {
-    padding: 20px;
-    overflow: auto;
-    flex-grow: 1;
-    mask-image: linear-gradient(to bottom, black 0%, black 75%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 75%, transparent 100%);
+  padding: 20px;
+  overflow: auto;
+  flex-grow: 1;
+  mask-image: linear-gradient(to bottom, black 0%, black 75%, transparent 100%);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 75%,
+    transparent 100%
+  );
 }
 
 .cardText {
-    border-radius: 2px;
-    white-space: pre-line;
+  border-radius: 2px;
+  white-space: pre-line;
 }

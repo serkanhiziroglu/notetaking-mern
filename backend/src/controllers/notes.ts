@@ -59,7 +59,6 @@ export const createNote: RequestHandler<
   const title = req.body.title;
   const text = req.body.text;
   const priority = req.body.priority;
-  console.log(priority);
   const authenticatedUserId = req.session.userId;
 
   try {
