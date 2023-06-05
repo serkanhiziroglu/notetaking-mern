@@ -17,9 +17,18 @@ const NavBar = ({
   onLogoutSuccessful,
 }: NavBarProps) => {
   return (
-    <Navbar bg='primary' variant='dark' expand='sm' sticky='top'>
+    <Navbar style={{ backgroundColor: '#fdefb2' }} variant='dark' expand='sm' sticky='top'>
       <Container>
-        <Navbar.Brand>Task Management App</Navbar.Brand>
+        <Navbar.Brand style={{
+          color: 'black',
+          fontSize: '24px',
+          fontWeight: 'bold',
+          fontFamily: 'Comfortaa, cursive',
+        }}>
+          Task Management App
+        </Navbar.Brand>
+
+
         <Navbar.Toggle aria-controls='main-navbar' />
         <Navbar.Collapse id='main-navbar'>
           <Nav className='ms-auto'>

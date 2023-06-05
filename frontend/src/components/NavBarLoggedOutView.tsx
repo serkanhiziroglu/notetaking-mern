@@ -6,12 +6,33 @@ interface NavBarLoggedOutViewProps {
 }
 
 const NavBarLoggedOutView = ({ onSignUpClicked, onLoginClicked }: NavBarLoggedOutViewProps) => {
+
     return (
         <>
-            <Button onClick={onSignUpClicked}>Sign Up</Button>
-            <Button onClick={onLoginClicked}>Log In</Button>
+            <Button
+                style={{
+                    backgroundColor: '#808080',
+                    color: '#FFFFFF',
+                    border: 'none',
+                    marginRight: '10px', // Added margin to the right
+                }}
+                onClick={onSignUpClicked}
+            >
+                Sign Up
+            </Button>
+            <Button
+                style={{
+                    backgroundColor: '#808080',
+                    color: '#FFFFFF',
+                    border: 'none',
+                }}
+                onClick={onLoginClicked}
+            >
+                Log In
+            </Button>
         </>
     );
+
 }
 
 export default NavBarLoggedOutView;
