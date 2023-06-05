@@ -28,10 +28,10 @@ const Note = ({
   }
 
   let priorityClass = '';
-  if (priority >= 3) {
+  if (priority >= 0 && priority <= 3) {
     priorityClass = styles.lowPriority;
   }
-  if (priority >= 6 && priority >= 4) {
+  if (priority <= 6 && priority >= 4) {
     priorityClass = styles.mediumPriority;
   }
   if (priority >= 7) {
