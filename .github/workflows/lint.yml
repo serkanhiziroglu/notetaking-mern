@@ -3,7 +3,7 @@ name: Linting Check
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   lint:
@@ -19,7 +19,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Lint code
         run: npm run lint
