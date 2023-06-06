@@ -18,8 +18,18 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install dependencies
+      - name: Install frontend dependencies
+        working-directory: frontend
         run: npm install
 
-      - name: Lint code
+      - name: Lint frontend code
+        working-directory: frontend
+        run: npm run lint
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm install
+
+      - name: Lint backend code
+        working-directory: backend
         run: npm run lint
