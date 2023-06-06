@@ -3,7 +3,7 @@ name: Linting Check
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   lint:
